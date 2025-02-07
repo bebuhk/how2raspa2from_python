@@ -1,0 +1,20 @@
+opti prop conp full nosymmetry phonon
+gmax  1e-06
+accuracy 9
+pressure  17085.8
+switch_min rfo gnorm 50.0
+
+cell
+10 11.1803 10 90 90 63.435
+space
+1
+
+species
+X core 1
+Nd core 0.25
+H core -0.5
+
+frac
+Nd     core   0.25000   0.75000   0.25000
+Nd     core   0.25000   0.50000   0.75000
+H      core   0.00000   0.00000   0.00000
