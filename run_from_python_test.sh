@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Check if exactly three arguments are provided
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 4 ]; then
     echo "Usage: $0 <number1> <number2> <number3>"
+    echo "did not get 3 arguments" >&2 # to stderr
     exit 1
 fi
 

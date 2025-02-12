@@ -3,7 +3,7 @@ NumberOfCycles                0
 NumberOfInitializationCycles  0
 PrintEvery                    1
 #RandomSeed                    1737124642
-Forcefield                    ExampleMoleculeForceField
+Forcefield                    Local
 # important: comment out the line below with # when "starting from scratch" (see README.md)
 RestartFile                   yes
 
@@ -17,21 +17,23 @@ UseChargesFromCIFFile yes
 CutOffVDW 12
 
 ChargeMethod Ewald
+#CoulombTruncated
+#Ewald
 #Ewald#CoulombSmoothed#CoulombShifted
 
 # used to compute Ewald parameter alpha
 EwaldPrecision 1e-9
-#CutOffChargeCharge 12
-
+CutOffChargeCharge 12
 #CutOffChargeChargeSwitch 3
 
+Movies no
 #ExternalTemperature 300.0
 Framework 0
-   FrameworkName test
+   FrameworkName RSM0290
    ExternalPressure 283.71653072020004
    ExternalTemperature 298.15
    HeliumVoidFraction 0.16196
-   UnitCells 1 1 1
+   UnitCells 4 4 2
 
 Component 0 MoleculeName             XX
             MoleculeDefinition       example_structure_1_atom
@@ -42,4 +44,9 @@ Component 0 MoleculeName             XX
             RotationProbability 1.0
             WidomProbability 0.0
 
-# what to change: FrameworkName, 
+# what to check: 
+#1 MOF: right cif. charges (in cif), LJ params (atoms of cif, UFF params in force_field_mixing_rules.def)
+#2 adsorbate: XX with atom XXX: charges (in pseudo_atoms.def), LJ params (in force_field_mixing_rules.def)
+#3 VDW/LJ interaction: params in force_field_mixing_rules.def, CutOffVDW (default:12)
+#4 Coulomb interaction: charges in cif and XX.def, ChargeMethod Ewald/CoulombTruncated, EwaldPrecision 1e-9, 
+#  CutOffChargeCharge (default: 12)

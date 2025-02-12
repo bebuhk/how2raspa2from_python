@@ -2,7 +2,7 @@ data_crystal
 
 _audit_creation_method 'AiiDA-DDEC plugin'
 
-_cell_length_a        100.0
+_cell_length_a        10.0
 _cell_length_b        100.0
 _cell_length_c        100.0
 
@@ -24,5 +24,5 @@ _atom_site_fract_x
 _atom_site_fract_y
 _atom_site_fract_z
 _atom_site_charge
-C         C   0.0 0.0 0.0 0.37 
+C         C   0.544 0.0 0.0 0.37 
 

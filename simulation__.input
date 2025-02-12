@@ -1,0 +1,45 @@
+SimulationType                MonteCarlo
+NumberOfCycles                0
+NumberOfInitializationCycles  0
+PrintEvery                    1
+#RandomSeed                    1737124642
+Forcefield                    Local
+# important: comment out the line below with # when "starting from scratch" (see README.md)
+RestartFile                   yes
+
+UseChargesFromCIFFile yes
+
+PrintPropertiesEvery 1
+
+WriteBinaryRestartFileEvery 1
+RemoveAtomNumberCodeFromLabel yes
+UseChargesFromCIFFile yes
+CutOffVDW 12
+
+ChargeMethod Ewald
+#Ewald#CoulombSmoothed#CoulombShifted
+
+# used to compute Ewald parameter alpha
+EwaldPrecision 1e-9
+#CutOffChargeCharge 12
+
+#CutOffChargeChargeSwitch 3
+
+#ExternalTemperature 300.0
+Framework 0
+   FrameworkName RSM0290
+   ExternalPressure 283.71653072020004
+   ExternalTemperature 298.15
+   HeliumVoidFraction 0.16196
+   UnitCells 1 1 1
+
+Component 0 MoleculeName             XX
+            MoleculeDefinition       example_structure_1_atom
+#important: create one molecule in first calculation ("starting from scratch). then comment/delete this (below) line with # when starting from restart file to not create a second molecule
+#CreateNumberOfMolecules  1
+            TranslationProbability   1.0
+            ReinsertionProbability   1.0
+            RotationProbability 1.0
+            WidomProbability 0.0
+
+# what to change: FrameworkName, 

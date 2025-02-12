@@ -5,13 +5,13 @@ Compiled as a 64-bits application
 Compiler: gcc Apple LLVM 15.0.0 (clang-1500.3.9.4)
 Compile Date = Jan 17 2025, Compile Time = 14:34:57
 
-Fri Feb  7 09:43:59 2025
-Simulation started on Friday, February 07.
-The start time was 09:43 AM.
+Wed Feb 12 22:56:16 2025
+Simulation started on Wednesday, February 12.
+The start time was 10:56 PM.
 
 Cpu data:    arm64
 Cpu Model:   Mac14,2
-Host name:   Benes-Air
+Host name:   student-net-nw-3584.intern.ethz.ch
 OS release:  23.2.0
 OS type:     Darwin
 OS version:  23C71
@@ -20,14 +20,14 @@ OS version:  23C71
 Simulation
 ===========================================================================
 Dimensions: 3
-Random number seed: 1738917839
+Random number seed: 1739397376
 RASPA directory set to: /Users/bene/RASPA/simulations/
 String appended to output-files: 
 Number of cycles: 0
 Number of initializing cycles: 0
 Number of equilibration cycles: 0
 Print every: 1
-Triclinic boundary condition applied
+Rectangular boundary condition applied
 Timestep: 0.000500
 	Degrees of freedom:                        3
 	Translational Degrees of freedom:          3
@@ -140,7 +140,7 @@ Charge from charge-equilibration: no
 Ewald summation is used (exact solution of a periodic system)
 Relative precision                : 1e-09
 Alpha convergence parameter       : 0.341429
-kvec (x,y,z)                      : 5 5 5
+kvec (x,y,z)                      : 13 13 11
 
 
 CFC-RXMC parameters
@@ -239,7 +239,7 @@ Energy overlap criteria:                                         1e+07
 Minimal Rosenbluth factor:                                       1e-150
 
 
-Pseudo atoms: 4
+Pseudo atoms: 6
 ===========================================================================
 Pseudo Atom[   0] Name UNIT     Oxidation:          Element: H    pdb-name: H    Scat. Types:   1   1 Mass=1.000000000  B-factor:0.000   
                  Charge=1.000000000          Polarization=0.000000000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
@@ -247,15 +247,21 @@ Pseudo Atom[   0] Name UNIT     Oxidation:          Element: H    pdb-name: H   
 Pseudo Atom[   1] Name XXX      Oxidation: +0       Element: X    pdb-name: X    Scat. Types:  -1  54 Mass=4.002602000  B-factor:1.000   
                  Charge=1.000000000          Polarization=0.000000000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
                  Anisotropic factor:    0.000 [-] (Relative), Radius:    1.000 [A], Framework-atom:  no
-Pseudo Atom[   2] Name Nd       Oxidation:          Element: Nd   pdb-name: Nd   Scat. Types:  61  60 Mass=144.236131372 B-factor:0.000   
-                 Charge=0.250000000    (av)  Polarization=31.400000000 [A^3] (considered a charged atom and no polarization)  Interactions: yes
-                 Anisotropic factor:    0.000 [-] (Absolute), Radius:    1.880 [A], Framework-atom: yes (charge from structure file)
+Pseudo Atom[   2] Name Mg       Oxidation:          Element: Mg   pdb-name: Mg   Scat. Types:  13  12 Mass=24.305051612 B-factor:0.000   
+                 Charge=1.550315000    (av)  Polarization=10.600000000 [A^3] (considered a charged atom and no polarization)  Interactions: yes
+                 Anisotropic factor:    0.000 [-] (Absolute), Radius:    1.400 [A], Framework-atom: yes (charge from structure file)
 Pseudo Atom[   3] Name H        Oxidation:          Element: H    pdb-name: H    Scat. Types:   1   1 Mass=1.007940754  B-factor:0.000   
-                 Charge=-0.500000000   (av)  Polarization=0.666793000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
+                 Charge=0.180667500    (av)  Polarization=0.666793000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
                  Anisotropic factor:    0.000 [-] (Absolute), Radius:    0.320 [A], Framework-atom: yes (charge from structure file)
+Pseudo Atom[   4] Name C        Oxidation:          Element: C    pdb-name: C    Scat. Types:   7   6 Mass=12.010735897 B-factor:0.000   
+                 Charge=0.250911875    (av)  Polarization=1.760000000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
+                 Anisotropic factor:    0.000 [-] (Absolute), Radius:    0.750 [A], Framework-atom: yes (charge from structure file)
+Pseudo Atom[   5] Name O        Oxidation:          Element: O    pdb-name: O    Scat. Types:   9   8 Mass=15.999404927 B-factor:0.000   
+                 Charge=-0.655326500   (av)  Polarization=0.802000000  [A^3] (considered a charged atom and no polarization)  Interactions: yes
+                 Anisotropic factor:    0.000 [-] (Absolute), Radius:    0.640 [A], Framework-atom: yes (charge from structure file)
 
 
-Forcefield: ExampleMoleculeForceField
+Forcefield: Local
 ===========================================================================
 Minimal distance: 1
 CutOff VDW : 12.000000 (144.000000)
@@ -276,11 +282,20 @@ and then 0 terms are overwritten using the specific interactions from the file '
 
 The force field and all the interactions:
     XXX -     XXX [LENNARD_JONES] p_0/k_B: 186.19000 [K], p_1: 2.89010 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
-    XXX -      Nd [LENNARD_JONES] p_0/k_B:  30.61108 [K], p_1: 3.03755 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+    XXX -      Mg [LENNARD_JONES] p_0/k_B: 101.98603 [K], p_1: 2.79075 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
     XXX -       H [LENNARD_JONES] p_0/k_B:  64.21038 [K], p_1: 2.73060 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
-     Nd -      Nd [LENNARD_JONES] p_0/k_B:   5.03270 [K], p_1: 3.18500 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
-     Nd -       H [LENNARD_JONES] p_0/k_B:  10.55669 [K], p_1: 2.87805 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+    XXX -       C [LENNARD_JONES] p_0/k_B:  99.19139 [K], p_1: 3.16050 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+    XXX -       O [LENNARD_JONES] p_0/k_B:  74.98166 [K], p_1: 3.00410 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+     Mg -      Mg [LENNARD_JONES] p_0/k_B:  55.86310 [K], p_1: 2.69140 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+     Mg -       H [LENNARD_JONES] p_0/k_B:  35.17139 [K], p_1: 2.63125 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+     Mg -       C [LENNARD_JONES] p_0/k_B:  54.33233 [K], p_1: 3.06115 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+     Mg -       O [LENNARD_JONES] p_0/k_B:  41.07139 [K], p_1: 2.90475 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
       H -       H [LENNARD_JONES] p_0/k_B:  22.14390 [K], p_1: 2.57110 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+      H -       C [LENNARD_JONES] p_0/k_B:  34.20762 [K], p_1: 3.00100 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+      H -       O [LENNARD_JONES] p_0/k_B:  25.85854 [K], p_1: 2.84460 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+      C -       C [LENNARD_JONES] p_0/k_B:  52.84350 [K], p_1: 3.43090 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+      C -       O [LENNARD_JONES] p_0/k_B:  39.94594 [K], p_1: 3.27450 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
+      O -       O [LENNARD_JONES] p_0/k_B:  30.19630 [K], p_1: 3.11810 [A], shift/k_B:   0.00000000 [K], tailcorrection: yes
 
 
 MoleculeDefinitions:
@@ -311,12 +326,12 @@ Component 0 [XX] (Adsorbate molecule)
 
 	Amount of excess molecules:       0.0000000000 [-]
 
-	Conversion factor molecules/unit cell -> mol/kg:       3.4544676559 [-]
-	Conversion factor molecules/unit cell -> mg/g:      13.8268591483 [-]
-	Conversion factor molecules/unit cell -> cm^3 STP/gr:      77.4283542596 [-]
-	Conversion factor molecules/unit cell -> cm^3 STP/cm^3:      37.2192593758 [-]
+	Conversion factor molecules/unit cell -> mol/kg:       1.5987027962 [-]
+	Conversion factor molecules/unit cell -> mg/g:       6.3989710094 [-]
+	Conversion factor molecules/unit cell -> cm^3 STP/gr:      35.8332857011 [-]
+	Conversion factor molecules/unit cell -> cm^3 STP/cm^3:      50.6582170989 [-]
 	Conversion factor mol/kg -> cm^3 STP/gr:      22.4139757476 [-]
-	Conversion factor mol/kg -> cm^3 STP/cm^3:      10.7742387782 [-]
+	Conversion factor mol/kg -> cm^3 STP/cm^3:      31.6870760595 [-]
 
 	Partial pressure: -16605402.00000000000000 [Pa]
 	                    -124540.51499999999942 [Torr]
@@ -341,7 +356,7 @@ Component 0 [XX] (Adsorbate molecule)
 		-------------------------------------------------
 		the group is modelled as flexible, i.e. no constraints
 		Mass: 4.002602 [a.u.]
-		Mass: 6.646475 [kg/m^3]
+		Mass: 0.282699 [kg/m^3]
 
 		Rotational Degrees of freedom: 0
 		Diagonalized inertia vector:       0.0000000000
@@ -462,32 +477,32 @@ Framework Status
 Lowenstein's rule obeyed by framework
 	Framework is modelled as: rigid
 
-	Number of charges:                               3
+	Number of charges:                               1792
 	Number of bonddipoles:                           0
 
 
 System Properties
 ===========================================================================
-Unit cell size: 10.000000 11.180340 10.000000
-Cell angles (radians)  alpha: 1.570796 beta: 1.570796 gamma: 1.107150
-Cell angles (degrees)  alpha: 90.000000 beta: 90.000000 gamma: 63.434995
-Number of unitcells [a]: 1
-Number of unitcells [b]: 1
-Number of unitcells [c]: 1
+Unit cell size: 7.551760 7.551700 12.883240
+Cell angles (radians)  alpha: 1.570796 beta: 1.570796 gamma: 1.570796
+Cell angles (degrees)  alpha: 90.000000 beta: 90.000000 gamma: 90.000000
+Number of unitcells [a]: 4
+Number of unitcells [b]: 4
+Number of unitcells [c]: 2
 
-TRICLINIC Boundary conditions: alpha!=90 or beta!=90 or gamma!=90
+RECTANGULAR Boundary conditions: alpha=beta=gamma=90 degrees
 
 Cartesian axis A is collinear with crystallographic axis a
 Cartesian axis B is collinear with (axb)xA
 Cartesian axis C is collinear with (axb)
 
 lengths of cell vectors:
- 10.00000  11.18034  10.00000
+ 30.20704  30.20680  25.76648
 cosines of cell angles:
-  0.00000   0.00000   0.44721
+  0.00000   0.00000   0.00000
 perpendicular cell widths:
-  8.94428  10.00000  10.00000
-volume of the cell:  1000.000413033100 (A^3)
+ 30.20704  30.20680  25.76648
+volume of the cell: 23510.831216805575 (A^3)
 
 Orthogonalization matrix Box
 Transforms fractional coordinates abc into orthonormal Cartesian coordinates xyz
@@ -495,47 +510,47 @@ Deorthogonalization matrix InverseBox
 Transforms orthonormal Cartesian coordinates xyz into fractional coordinates xyz
 
 Box[0]:
-	   10.000000000000     4.999991990890     0.000000000000
-	    0.000000000000    10.000004130331     0.000000000000
-	    0.000000000000     0.000000000000    10.000000000000
+	   30.207040000000     0.000000000000     0.000000000000
+	    0.000000000000    30.206800000000     0.000000000000
+	    0.000000000000     0.000000000000    25.766480000000
 
 Inverse box[0]:
-	    0.100000000000    -0.049999899257     0.000000000000
-	    0.000000000000     0.099999958697     0.000000000000
-	    0.000000000000     0.000000000000     0.100000000000
+	    0.033104865621     0.000000000000     0.000000000000
+	    0.000000000000     0.033105128647     0.000000000000
+	    0.000000000000     0.000000000000     0.038810112984
 
 
 Unitcell box[0]:
-	   10.000000000000     4.999991990890     0.000000000000
-	    0.000000000000    10.000004130331     0.000000000000
-	    0.000000000000     0.000000000000    10.000000000000
+	    7.551760000000     0.000000000000     0.000000000000
+	    0.000000000000     7.551700000000     0.000000000000
+	    0.000000000000     0.000000000000    12.883240000000
 
 Unitcell inverse box[0]:
-	    0.100000000000    -0.049999899257    -0.000000000000
-	    0.000000000000     0.099999958697    -0.000000000000
-	    0.000000000000     0.000000000000     0.100000000000
+	    0.132419462483    -0.000000000000    -0.000000000000
+	    0.000000000000     0.132420514586    -0.000000000000
+	    0.000000000000     0.000000000000     0.077620225968
 
 lengths of cell vectors (inverse box):
-  0.10000   0.11180   0.10000
+  0.03310   0.03311   0.03881
 cosines of cell angles (inverse box):
- -0.00000  -0.00000  -0.44721
+ -0.00000  -0.00000  -0.00000
 perpendicular cell widths (inverse):
-  0.08944   0.10000   0.10000
-volume of the cell:  1000.000413033100 (A^3)
+  0.03310   0.03311   0.03881
+volume of the cell: 23510.831216805575 (A^3)
 
 No replicas are used
 Framework is simulated as 'rigid'
-Number of framework atoms: 3
-Number of framework atoms in the unit cell: 3
-Framework Mass:   289.480203498296 [g/mol]
-Framework Density:   480.692889985335 [kg/m^3]    2.0803303332207 [cm^3/g]
+Number of framework atoms: 1792
+Number of framework atoms in the unit cell: 56
+Framework Mass: 20016.228204877592 [g/mol]
+Framework Density:  1413.719565698957 [kg/m^3]    0.7073538658324 [cm^3/g]
 Helium void fraction:    0.16196000
-Available pore volume:  161.96006689 [A^3]    0.33693030 [cm^3/g]
-Conversion factor from molecule/unit cell -> kmol/m^3: 1.66054, kmol/m^3 accesible pore volume: 10.2528
+Available pore volume: 3807.81422387 [A^3]    0.11456303 [cm^3/g]
+Conversion factor from molecule/unit cell -> kmol/m^3: 0.0706287, kmol/m^3 accesible pore volume: 0.436087
 
 Number Of Frameworks (per system): 1
 ----------------------------------------------------------------------
-Framework name: test
+Framework name: RSM0290
 Space group: 1
 	Identifier: 1
 	short international Hermann-Mauguin symbol: P 1
@@ -549,29 +564,31 @@ Space group: 1
 		'x,y,z'
 Framework is simulated as 'rigid'
 Shift: 0.000000 0.000000 0.000000
-Number of framework atoms: 3
-Number of asymmetric atoms: 3
+Number of framework atoms: 1792
+Number of asymmetric atoms: 56
 Number of free framework atoms: 0
-Number of fixed framework atoms: 3
-Number of framework atoms in the unit cell: 3
-Framework Mass:   289.480203498296 [g/mol]
-Framework Density:   480.692889985333 [kg/m^3]
+Number of fixed framework atoms: 1792
+Number of framework atoms in the unit cell: 56
+Framework Mass: 20016.228204877592 [g/mol]
+Framework Density:  1413.719565698957 [kg/m^3]
 Framework has net charge: 0.000000
-         largest charge : 1.000000
-         smallest charge: -0.500000
+         largest charge : 1.550340
+         smallest charge: -0.731480
 
 Using FULL Host-guest interaction calculation (for testing purposes)
 
 Current Atom Status
 ===========================================================================
-Number of framework atoms        : 3
+Number of framework atoms        : 1792
 Number of cations molecules      : 0
 Number of adsorbate molecules    : 1
 Component    0 :    1 molecules
 Pseudo Atoms    0 [    UNIT]:    0 atoms
 Pseudo Atoms    1 [     XXX]:    1 atoms
-Pseudo Atoms    2 [      Nd]:    2 atoms
-Pseudo Atoms    3 [       H]:    1 atoms
+Pseudo Atoms    2 [      Mg]:  128 atoms
+Pseudo Atoms    3 [       H]:  512 atoms
+Pseudo Atoms    4 [       C]:  512 atoms
+Pseudo Atoms    5 [       O]:  640 atoms
 
 
 Current (initial full energy) Energy Status
@@ -635,11 +652,11 @@ Host/Host energy:                                             0.00000000
 	Host/Host bondipole-bonddipole Real energy:                   0.00000000
 	Host/Host bondipole-bonddipole Fourier energy:                0.00000000
 
-Host/Adsorbate energy:                                    -4573.27029298
-	Host/Adsorbate VDW energy:                                  -12.08786524
-	Host/Adsorbate Coulomb energy:                            -4561.18242774
-	Host/Adsorbate charge-charge Real energy:                  -464.86193961
-	Host/Adsorbate charge-charge Fourier energy:              -4096.32048813
+Host/Adsorbate energy:                                    12185.34089762
+	Host/Adsorbate VDW energy:                                 1133.03365260
+	Host/Adsorbate Coulomb energy:                            11052.30724502
+	Host/Adsorbate charge-charge Real energy:                 12058.54554142
+	Host/Adsorbate charge-charge Fourier energy:              -1006.23829640
 	Host/Adsorbate charge-bonddipole Real energy:                 0.00000000
 	Host/Adsorbate charge-bonddipole Fourier energy:              0.00000000
 	Host/Adsorbate bondipole-bonddipole Real energy:              0.00000000
@@ -693,7 +710,7 @@ Polarization energy:
 	Adsorbate back-polarization energy:                                0.00000000
 	Cation back-polarization energy:                                   0.00000000
 
-Tail-correction energy:                                      -1.49953005
+Tail-correction energy:                                  -21026.51913251
 
 Distance constraints energy:                                  0.00000000
 Angle constraints energy:                                     0.00000000
@@ -703,9 +720,9 @@ Out-of-plane distance constraints energy:                     0.00000000
 Exclusion constraints energy:                                 0.00000000
 
 ===================================================================
-Total energy: -4574.769823036875
-	Total Van der Waals: -12.087865
-	Total Coulomb: -4561.182428
+Total energy: -8841.178234889654
+	Total Van der Waals: 1133.033653
+	Total Coulomb: 11052.307245
 
 	Total Polarization: 0.000000
 
@@ -787,11 +804,11 @@ Host/Host energy:                                             0.00000000
 	Host/Host bondipole-bonddipole Real energy:                   0.00000000
 	Host/Host bondipole-bonddipole Fourier energy:                0.00000000
 
-Host/Adsorbate energy:                                    -4573.27029298
-	Host/Adsorbate VDW energy:                                  -12.08786524
-	Host/Adsorbate Coulomb energy:                            -4561.18242774
-	Host/Adsorbate charge-charge Real energy:                  -464.86193961
-	Host/Adsorbate charge-charge Fourier energy:              -4096.32048813
+Host/Adsorbate energy:                                    12185.34089762
+	Host/Adsorbate VDW energy:                                 1133.03365260
+	Host/Adsorbate Coulomb energy:                            11052.30724502
+	Host/Adsorbate charge-charge Real energy:                 12058.54554142
+	Host/Adsorbate charge-charge Fourier energy:              -1006.23829640
 	Host/Adsorbate charge-bonddipole Real energy:                 0.00000000
 	Host/Adsorbate charge-bonddipole Fourier energy:              0.00000000
 	Host/Adsorbate bondipole-bonddipole Real energy:              0.00000000
@@ -845,7 +862,7 @@ Polarization energy:
 	Adsorbate back-polarization energy:                                0.00000000
 	Cation back-polarization energy:                                   0.00000000
 
-Tail-correction energy:                                      -1.49953005
+Tail-correction energy:                                  -21026.51913251
 
 Distance constraints energy:                                  0.00000000
 Angle constraints energy:                                     0.00000000
@@ -855,9 +872,9 @@ Out-of-plane distance constraints energy:                     0.00000000
 Exclusion constraints energy:                                 0.00000000
 
 ===================================================================
-Total energy: -4574.769823036875
-	Total Van der Waals: -12.087865
-	Total Coulomb: -4561.182428
+Total energy: -8841.178234889654
+	Total Van der Waals: 1133.033653
+	Total Coulomb: 11052.307245
 
 	Total Polarization: 0.000000
 
@@ -1154,11 +1171,11 @@ Host/Host energy:                                             0.00000000
 	Host/Host bondipole-bonddipole Real energy:                   0.00000000
 	Host/Host bondipole-bonddipole Fourier energy:                0.00000000
 
-Host/Adsorbate energy:                                    -4573.27029298
-	Host/Adsorbate VDW energy:                                  -12.08786524
-	Host/Adsorbate Coulomb energy:                            -4561.18242774
-	Host/Adsorbate charge-charge Real energy:                  -464.86193961
-	Host/Adsorbate charge-charge Fourier energy:              -4096.32048813
+Host/Adsorbate energy:                                1307312127.23344660
+	Host/Adsorbate VDW energy:                            1307301074.92620182
+	Host/Adsorbate Coulomb energy:                            11052.30724502
+	Host/Adsorbate charge-charge Real energy:                 12058.54554142
+	Host/Adsorbate charge-charge Fourier energy:              -1006.23829640
 	Host/Adsorbate charge-bonddipole Real energy:                 0.00000000
 	Host/Adsorbate charge-bonddipole Fourier energy:              0.00000000
 	Host/Adsorbate bondipole-bonddipole Real energy:              0.00000000
@@ -1212,7 +1229,7 @@ Polarization energy:
 	Adsorbate back-polarization energy:                                0.00000000
 	Cation back-polarization energy:                                   0.00000000
 
-Tail-correction energy:                                      -1.49953005
+Tail-correction energy:                                  -21026.51913251
 
 Distance constraints energy:                                  0.00000000
 Angle constraints energy:                                     0.00000000
@@ -1222,9 +1239,9 @@ Out-of-plane distance constraints energy:                     0.00000000
 Exclusion constraints energy:                                 0.00000000
 
 ===================================================================
-Total energy: -4574.769823036875
-	Total Van der Waals: -12.087865
-	Total Coulomb: -4561.182428
+Total energy: 1307291100.714313983917
+	Total Van der Waals: 1307301074.926202
+	Total Coulomb: 11052.307245
 
 	Total Polarization: 0.000000
 
@@ -1290,8 +1307,8 @@ Host/Host energy-drift:                                              0
 		Host/Host Fourier charge-bonddipole energy-drift:                0
 		Host/Host Real bonddipole-bonddipole energy-drift:               0
 		Host/Host Fourier bonddipole-bonddipole energy-drift:            0
-Host/Adsorbate energy-drift:                                         0
-	Host/Adsorbate VDW energy-drift:                                   0
+Host/Adsorbate energy-drift:                                         -1.3073e+09
+	Host/Adsorbate VDW energy-drift:                                   -1.3073e+09
 	Host/Adsorbate Coulomb energy-drift:                               0
 		Host/Adsorbate Real charge-charge energy-drift:                  0
 		Host/Adsorbate Fourier charge-charge energy-drift:               0
@@ -1354,7 +1371,7 @@ Out-of-plane distance constraints energy-drift:                    0
 Exclusion constraints energy-drift:                 0
 
 ===================================================================
-Total energy-drift: 0
+Total energy-drift: -1.3073e+09
 
 
 
@@ -2289,12 +2306,12 @@ Average adsorption energy <U_gh>_1-<U_h>_0 obtained from Widom-insertion:
 =========================================================================
 
 Simulation finished,  3 warnings
-WARNING: INAPPROPRIATE NUMBER OF UNIT CELLS USED
 WARNING: THE SYSTEM HAS A NET CHARGE 
 WARNING: REINSERTION MOVE USED ON CHARGED IONS (IF POSSIBLE, CHANGE TO RANDOM TRANSLATION MOVE TO AVOID NUMERICAL PROBLEMS)
+WARNING: ENERGY DRIFT (INTERNAL CONSISTENCY ERROR IN THE CODE), THE SIMULATION RESULTS ARE WRONG!!
 
 
-Fri Feb  7 09:43:59 2025
-Simulation finished on Friday, February 07.
-The end time was 09:43 AM.
+Wed Feb 12 22:56:16 2025
+Simulation finished on Wednesday, February 12.
+The end time was 10:56 PM.
 
