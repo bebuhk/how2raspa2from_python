@@ -15,3 +15,5 @@ just run
 '''
 bash run_from_python.sh 5.0 0 0 
 '''
+
+or run the **calc_ext_pot_with_raspa_3D_cif_grid.py** script to calculate a whole cif file on a cDFT grid (with density of 2 gridpoints per Å). make sure you replicate the unitcell often enough in simulation.input. 
